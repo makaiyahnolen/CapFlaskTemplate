@@ -14,6 +14,7 @@ from app.classes.data import User
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
+
     password = PasswordField('Password', validators=[DataRequired()])
     remember_me = BooleanField('Remember Me?')
     submit = SubmitField()
@@ -58,6 +59,7 @@ class ProfileForm(FlaskForm):
     lname = StringField('Last Name', validators=[DataRequired()]) 
     image = FileField("Image") 
     submit = SubmitField('Post')
+    role = SelectField('Role', choices=[("Teacher","Teacher"),("Student","Student")])
 
 class PostForm(FlaskForm):
     subject = StringField('Subject', validators=[DataRequired()])
