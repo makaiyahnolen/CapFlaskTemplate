@@ -14,3 +14,7 @@ def aboutus():
 @app.route('/getmotivation')
 def getmotivation():
     return render_template('getmotivation.html')
+
+@app.route('/insecure')
+def insecure():
+    return render_template('insecure.html')
