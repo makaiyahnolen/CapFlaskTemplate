@@ -11,9 +11,6 @@ def index():
 def aboutus():
     return render_template('aboutus.html')
 
-@app.route('/getmotivation')
-def getmotivation():
-    return render_template('getmotivation.html')
 
 @app.route('/insecure')
 def insecure():
@@ -22,3 +19,7 @@ def insecure():
 @app.route('/stuck')
 def stuck():
     return render_template('stuck.html')
+
+@app.route('/angry')
+def angry():
+    return render_template('angry.html')
