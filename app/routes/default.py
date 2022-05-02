@@ -18,3 +18,7 @@ def getmotivation():
 @app.route('/insecure')
 def insecure():
     return render_template('insecure.html')
+
+@app.route('/stuck')
+def stuck():
+    return render_template('stuck.html')
